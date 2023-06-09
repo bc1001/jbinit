@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: config
-      run: sudo gem install ldid 
+      run: brew install ldid 
     - name: make
       run: make all
     #- name: make check
