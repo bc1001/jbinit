@@ -12,9 +12,10 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
-   # - name: config
+    - name: config
+      run: sudo gem install ldid 
     - name: make
-      run: make
+      run: make all
     #- name: make check
     #  run: make check
    # - name: make distcheckmake distcheck
